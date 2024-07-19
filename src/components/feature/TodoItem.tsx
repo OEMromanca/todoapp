@@ -48,7 +48,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ item }) => {
   const { mutate: updateTodo, isLoading: isUpdating } = useUpdateTodo();
   const { mutate: toggleCompleteTodo } = useToggleCompletedTodo();
 
-  const { isDarkMode } = useTheme(); // Access theme
+  const { isDarkMode } = useTheme();
 
   const [isEditing, setIsEditing] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(item.category);

@@ -6,12 +6,13 @@ import SubmitForm from './SubmitForm';
 import TodoItem from './TodoItem';
 import Message from '../shared/Message';
 import { transformText } from '../../utils/utils';
-import { useTheme } from '../../providers/ThemeProvider'; // Import the useTheme hook
+import { useTheme } from '../../providers/ThemeProvider';
+import { ITodo } from '../../interfaces';
 
 const TodoList: React.FC = () => {
   const { filter } = useParams<{ filter?: keyof typeof FILTER_MAP }>();
   const { data, isLoading, isError } = useFilteredTodos(filter ?? 'all');
-  const { isDarkMode } = useTheme(); // Access dark mode state
+  const { isDarkMode } = useTheme();
 
   if (isLoading) {
     return (
@@ -41,7 +42,7 @@ const TodoList: React.FC = () => {
       {data && data.length === 0 ? (
         <Message type="noTodos" text="No todos available in this section." />
       ) : (
-        data?.map((todo) => <TodoItem key={todo.id} item={todo} />)
+        data?.map((todo: ITodo) => <TodoItem key={todo.id} item={todo} />)
       )}
       <SubmitForm />
     </div>

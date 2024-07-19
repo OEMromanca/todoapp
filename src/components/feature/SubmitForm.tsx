@@ -55,11 +55,10 @@ const SubmitForm: React.FC = () => {
 
     mutate(newTodo, {
       onSuccess: () => {
-        console.log('Todo added successfully:', data.todo);
         setIsFormVisible(false);
         reset();
       },
-      onError: (error) => {
+      onError: (error: Error) => {
         console.error('Error adding todo:', error);
       },
     });
