@@ -4,7 +4,7 @@ import { FILTER_MAP } from '../../utils/filterMap';
 import { categories, priorities } from '../../utils/mocks';
 import '../../App.css';
 import NavLink from '../../routes/NavLink';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 import CustomSwitch from '../shared/Switch';
 
 const SideBar: React.FC = () => {

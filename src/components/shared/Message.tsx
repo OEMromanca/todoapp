@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 interface MessageProps {
   type: 'loading' | 'error' | 'noTodos';

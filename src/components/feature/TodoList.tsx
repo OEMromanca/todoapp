@@ -6,7 +6,7 @@ import SubmitForm from './SubmitForm';
 import TodoItem from './TodoItem';
 import Message from '../shared/Message';
 import { transformText } from '../../utils/utils';
-import { useTheme } from '../../Providers/ThemeProvider'; // Import the useTheme hook
+import { useTheme } from '../../providers/ThemeProvider'; // Import the useTheme hook
 
 const TodoList: React.FC = () => {
   const { filter } = useParams<{ filter?: keyof typeof FILTER_MAP }>();

@@ -1,6 +1,6 @@
 // src/components/Header.tsx
 import React from 'react';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 const Header: React.FC = () => {
   const { isDarkMode } = useTheme();

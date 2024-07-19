@@ -2,7 +2,7 @@ import React from 'react';
 import SideBar from './SideBar';
 import Header from './Header';
 import TodoRoutes from '../../routes/todoRoutes';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 const Layout: React.FC = () => {
   const { isDarkMode } = useTheme();

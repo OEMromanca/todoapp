@@ -1,6 +1,6 @@
 import React from 'react';
 import { UseFormRegister } from 'react-hook-form';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 interface InputProps {
   type: 'text' | 'password' | 'email';

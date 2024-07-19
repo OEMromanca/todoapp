@@ -4,7 +4,7 @@ import './index.css';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Layout from './components/layout/index.tsx';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { ThemeProvider } from './Providers/ThemeProvider.tsx';
+import { ThemeProvider } from './providers/ThemeProvider.tsx';
 
 const queryClient = new QueryClient();
 

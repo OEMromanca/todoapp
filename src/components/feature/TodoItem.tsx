@@ -15,7 +15,7 @@ import {
 } from '../../hooks/mutations';
 import { formatDate } from '../../utils/utils';
 import CustomSwitch from '../shared/Switch';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 interface ITodo {
   id: string;

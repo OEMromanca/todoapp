@@ -1,6 +1,6 @@
 import React from 'react';
 import Switch from 'react-switch';
-import { useTheme } from '../../Providers/ThemeProvider';
+import { useTheme } from '../../providers/ThemeProvider';
 
 interface CustomSwitchProps {
   checked: boolean;

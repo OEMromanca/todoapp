@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useTheme } from '../Providers/ThemeProvider';
+import { useTheme } from '../providers/ThemeProvider';
 
 interface NavLinkProps {
   to: string;
